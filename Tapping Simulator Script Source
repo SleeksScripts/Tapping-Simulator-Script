@@ -1,0 +1,435 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "VIPER HUB", HidePremium = false, IntroText = "VIPER HUB", SaveConfig = true, ConfigFolder = "OrionTest"})
+--Values
+
+
+getgenv().autoTap = true
+getgenv().slowTap = true
+getgenv().autoRebirth = true
+getgenv().selectRebirth = true
+getgenv().selectEgg = "Starter"
+getgenv().autoHatch = true
+getgenv().walkSpeed = true
+getgenv().teleportPlace = true
+getgenv().unlockAll = true
+getgenv().rebirthUpgrade = true
+getgenv().moreJumps = true
+
+
+
+
+
+
+
+
+--Functions
+
+function autoTap()
+ while getgenv().autoTap == true do
+
+game:GetService("ReplicatedStorage").Events.Tap:FireServer()
+        wait()
+
+
+ end
+
+end
+
+
+
+function slowTap()
+    while getgenv().slowTap == true do
+   
+   game:GetService("ReplicatedStorage").Events.Tap:FireServer()
+           wait(0.1)
+   
+   
+    end
+   
+   end
+   
+
+
+--REBIRTH FUNCTION
+function autoRebirth()
+    while getgenv().autoRebirth == true do
+
+
+game.ReplicatedStorage.Events.Rebirth:FireServer(getgenv().selectRebirth,1)
+        wait()
+
+    end
+
+end
+
+
+--Autohatch
+function autoHatch()
+    while getgenv().autoHatch == true do
+        
+
+game.ReplicatedStorage.Events.HatchEgg:InvokeServer({},getgenv().selectEgg,1)
+
+            wait()
+    
+
+    
+        end
+    end
+
+--Teleport
+function Teleport(teleportplace)
+    local player = game.Players.LocalPlayer
+        player.Character.HumanoidRootPart.CFrame = teleportplace
+
+end
+
+
+function unlockAll()
+    while getgenv().unlockAll == true do
+        Teleport(game.ReplicatedStorage.Events.Teleport:FireServer(CFrame.new(-111.361511, 104.42395, -468.837219, 1, 0, 0, 0, 1, 0, 0, 0, 1))) 
+        Teleport(game.ReplicatedStorage.Events.Teleport:FireServer(CFrame.new(-163.984467, 987.596497, -403.339417, 1, 0, 0, 0, 1, 0, 0, 0, 1)))
+        Teleport(game.ReplicatedStorage.Events.Teleport:FireServer(CFrame.new(-179.51564, 1524.63098, -682.498718, -1, 0, -0, -0, 1, -0, -0, 0, -1)))
+        local ohCFrame1 = CFrame.new(-264.358887, 2123.06299, -694.661316, -1, 0, -0, -0, 1, -0, -0, 0, -1)
+        game:GetService("ReplicatedStorage").Events.Teleport:FireServer(ohCFrame1)
+        local ohCFrame1 = CFrame.new(-201.771973, 2944.48169, -470.408752, 0, 0, 1, 0, 1, 0, -1, 0, 0)
+        game:GetService("ReplicatedStorage").Events.Teleport:FireServer(ohCFrame1)
+        local ohCFrame1 = CFrame.new(-257.673218, 4236.0083, -768.547119, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        game:GetService("ReplicatedStorage").Events.Teleport:FireServer(ohCFrame1)
+        local ohCFrame1 = CFrame.new(-310.852997, 6877.99463, -484.813751, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        game:GetService("ReplicatedStorage").Events.Teleport:FireServer(ohCFrame1)
+        local ohCFrame1 = CFrame.new(-334.129303, 8372.16211, -483.396454, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        game:GetService("ReplicatedStorage").Events.Teleport:FireServer(ohCFrame1)
+        local ohCFrame1 = CFrame.new(-426.127472, 11256.8076, -237.065384, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        game:GetService("ReplicatedStorage").Events.Teleport:FireServer(ohCFrame1)
+        local ohCFrame1 = CFrame.new(-420.949951, 13807.4238, -543.469482, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        game:GetService("ReplicatedStorage").Events.Teleport:FireServer(ohCFrame1)
+        local ohCFrame1 = CFrame.new(1137.61401, 170.300522, -2859.72534, 0, 0, -1, 0, 1, -0, 1, 0, -0)
+        game:GetService("ReplicatedStorage").Events.Teleport:FireServer(ohCFrame1)
+        local ohCFrame1 = CFrame.new(1280.59583, 2193.82812, -2885.14429, 0, 0, 1, 0, 1, 0, -1, 0, 0)
+        game:GetService("ReplicatedStorage").Events.Teleport:FireServer(ohCFrame1)
+        local ohCFrame1 = CFrame.new(1401.12939, 5240.41943, -2953.91968, 0, 0, 1, 0, 1, 0, -1, 0, 0)
+        game:GetService("ReplicatedStorage").Events.Teleport:FireServer(ohCFrame1)
+        local ohCFrame1 = CFrame.new(1319.70276, 7662.0249, -2958.05762, 0, 0, 1, 0, 1, 0, -1, 0, 0)
+        game:GetService("ReplicatedStorage").Events.Teleport:FireServer(ohCFrame1)
+        local ohCFrame1 = CFrame.new(1309.62, 10406.0234, -2811.53516, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        game:GetService("ReplicatedStorage").Events.Teleport:FireServer(ohCFrame1)
+        local ohCFrame1 = CFrame.new(1426.21277, 13353.7031, -2900.90088, -0.707131207, 0, 0.707082391, 0, 1.00000012, 0, -0.707082391, 0, -0.707131207)
+        game:GetService("ReplicatedStorage").Events.Teleport:FireServer(ohCFrame1)
+        local ohCFrame1 = CFrame.new(1415.12451, 169.644089, -5604.4707, 0, 0, 1, 0, 1, 0, -1, 0, 0)
+        game:GetService("ReplicatedStorage").Events.Teleport:FireServer(ohCFrame1)
+        local ohCFrame1 = CFrame.new(1315.54846, 2042.72107, -5586.78125, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        game:GetService("ReplicatedStorage").Events.Teleport:FireServer(ohCFrame1)
+        local ohCFrame1 = CFrame.new(1347.01697, 5137.25488, -5601.7417, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        game:GetService("ReplicatedStorage").Events.Teleport:FireServer(ohCFrame1)
+        local ohCFrame1 = CFrame.new(1322.64453, 8659.05566, -5596.52344, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        game:GetService("ReplicatedStorage").Events.Teleport:FireServer(ohCFrame1)
+        local ohCFrame1 = CFrame.new(1358.43311, 12286.8545, -5561.14893, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        game:GetService("ReplicatedStorage").Events.Teleport:FireServer(ohCFrame1)
+
+        
+    end
+end
+
+
+
+--Auto upgrades
+
+function rebirthUpgrade()
+    while getgenv().rebirthUpgrade == true do
+local ohString1 = "rebirthUpgrades"
+game:GetService("ReplicatedStorage").Events.Upgrade:FireServer(ohString1)
+            wait(3)
+
+    end
+
+end
+
+function moreJumps()
+    while getgenv().moreJumps == true do
+local ohString1 = "jumps"
+
+game:GetService("ReplicatedStorage").Events.Upgrade:FireServer(ohString1)
+                wait(3)
+    end
+end
+
+--Sections/Toggles
+
+local Tab = Window:MakeTab({
+	Name = "AutoClick",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+local Section = Tab:AddSection({
+	Name = "AutoClicker"
+})
+
+
+Tab:AddToggle({
+	Name = "Fast AutoClick",
+	Default = false,
+	Callback = function(Value)
+		getgenv().autoTap = Value
+            autoTap()
+	end    
+})
+
+
+Tab:AddToggle({
+	Name = "Slow AutoClick",
+	Default = false,
+	Callback = function(Value)
+		getgenv().slowTap = Value
+            slowTap()
+	end    
+})
+
+
+
+local Tab = Window:MakeTab({
+	Name = "AutoRebirth",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+
+local Section = Tab:AddSection({
+	Name = "AutoRebirth"
+})
+
+Tab:AddToggle({
+    Name = "Start Auto Rebirthing",
+    Default = false,
+    Callback = function(Value)
+            getgenv().autoRebirth = Value
+            autoRebirth()
+        
+    end    
+})
+
+
+
+Tab:AddDropdown({
+    Name = "Auto Rebirth",
+    Default = "1",
+    Options = {"1", "5", "10", "20","100","500","4000"},
+    Callback = function(Value)
+        getgenv().selectRebirth = Value
+            
+    end    
+})
+
+
+local Tab = Window:MakeTab({
+    Name = "AutoHatch",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+
+local Section = Tab:AddSection({
+    Name = "AutoHatch"
+})
+
+Tab:AddToggle({
+    Name = "Start AutoHatch",
+    Default = false,
+    Callback = function(Value)
+        getgenv().autoHatch = Value
+                autoHatch()
+    end    
+})
+
+
+Tab:AddDropdown({
+    Name = "Select Egg",
+    Default = "Starter Egg",
+    Options = {"Starter", "Wood Egg","Jungle Egg","Coral Egg","Bee Egg","Swamp Egg","Snow Egg","Desert Egg","Death Egg","Dominus Egg","Mine Egg","Beach Egg","Dark Egg","Cloud Egg","Magma Egg",},
+    Callback = function(Value)
+        getgenv().selectEgg = Value
+            selectEgg()
+        
+            
+    end    
+})
+
+local Tab = Window:MakeTab({
+    Name = "Teleports",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+
+
+
+
+
+
+Tab:AddButton({
+    Name = "",
+    Callback = function()
+     if getgenv().teleportPlace == "Main Island" then
+            Teleport(game.ReplicatedStorage.Events.Teleport:FireServer(CFrame.new(-111.361511, 104.42395, -468.837219, 1, 0, 0, 0, 1, 0, 0, 0, 1)))
+    elseif getgenv().teleportPlace == "Forest Island" then
+        Teleport(game.ReplicatedStorage.Events.Teleport:FireServer(CFrame.new(-163.984467, 987.596497, -403.339417, 1, 0, 0, 0, 1, 0, 0, 0, 1)))
+        elseif getgenv().teleportPlace == "Flower Island" then
+            Teleport(game.ReplicatedStorage.Events.Teleport:FireServer(CFrame.new(-179.51564, 1524.63098, -682.498718, -1, 0, -0, -0, 1, -0, -0, 0, -1)))
+        elseif  getgenv().teleportPlace == "Swamp Island" then
+local ohCFrame1 = CFrame.new(-264.358887, 2123.06299, -694.661316, -1, 0, -0, -0, 1, -0, -0, 0, -1)
+game:GetService("ReplicatedStorage").Events.Teleport:FireServer(ohCFrame1)
+        elseif getgenv().teleportPlace == "Snow Island" then
+local ohCFrame1 = CFrame.new(-201.771973, 2944.48169, -470.408752, 0, 0, 1, 0, 1, 0, -1, 0, 0)
+game:GetService("ReplicatedStorage").Events.Teleport:FireServer(ohCFrame1)
+        elseif getgenv().teleportPlace == "Desert Island" then
+            local ohCFrame1 = CFrame.new(-257.673218, 4236.0083, -768.547119, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+            game:GetService("ReplicatedStorage").Events.Teleport:FireServer(ohCFrame1)
+        elseif getgenv().teleportPlace == "Beach Island" then
+            local ohCFrame1 = CFrame.new(-310.852997, 6877.99463, -484.813751, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+            game:GetService("ReplicatedStorage").Events.Teleport:FireServer(ohCFrame1)
+        elseif getgenv().teleportPlace == "Mines Island" then
+            local ohCFrame1 = CFrame.new(-334.129303, 8372.16211, -483.396454, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+            game:GetService("ReplicatedStorage").Events.Teleport:FireServer(ohCFrame1)
+        elseif getgenv().teleportPlace == "Cloud Island" then
+            local ohCFrame1 = CFrame.new(-426.127472, 11256.8076, -237.065384, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+            game:GetService("ReplicatedStorage").Events.Teleport:FireServer(ohCFrame1)
+        elseif getgenv().teleportPlace == "Coral Island" then
+            local ohCFrame1 = CFrame.new(-420.949951, 13807.4238, -543.469482, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+            game:GetService("ReplicatedStorage").Events.Teleport:FireServer(ohCFrame1)
+        elseif getgenv().teleportPlace == "DarkHeart Island" then
+            
+        end
+      end    
+})
+
+
+
+Tab:AddDropdown({
+    Name = "GreenLand Teleports",
+    Default = "Main Island",
+    Options = {"Main Island","Forest Island", "Flower Island","Swamp Island","Snow Island","Desert Island","Beach Island","Mines Island","Cloud Island","Coral Island","DarkHeart Island"},
+    Callback = function(Value)
+        getgenv().teleportPlace = Value
+    end    
+})
+
+Tab:AddButton({
+    Name = "",
+    Callback = function()
+        if getgenv().teleportPlace == "FlameLand Island" then
+local ohCFrame1 = CFrame.new(1137.61401, 170.300522, -2859.72534, 0, 0, -1, 0, 1, -0, 1, 0, -0)
+game:GetService("ReplicatedStorage").Events.Teleport:FireServer(ohCFrame1)
+    elseif getgenv().teleportPlace == "Molten Island" then
+    local ohCFrame1 = CFrame.new(1280.59583, 2193.82812, -2885.14429, 0, 0, 1, 0, 1, 0, -1, 0, 0)
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer(ohCFrame1)
+elseif getgenv().teleportPlace == "Blue Magma Island" then
+    local ohCFrame1 = CFrame.new(1401.12939, 5240.41943, -2953.91968, 0, 0, 1, 0, 1, 0, -1, 0, 0)
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer(ohCFrame1)
+elseif getgenv().teleportPlace == "Purple Magma Island" then
+    local ohCFrame1 = CFrame.new(1319.70276, 7662.0249, -2958.05762, 0, 0, 1, 0, 1, 0, -1, 0, 0)
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer(ohCFrame1)
+elseif getgenv().teleportPlace == "Yellow Magma Island" then
+    local ohCFrame1 = CFrame.new(1309.62, 10406.0234, -2811.53516, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer(ohCFrame1)
+elseif getgenv().teleportPlace == "Red Magma Island" then
+    local ohCFrame1 = CFrame.new(1426.21277, 13353.7031, -2900.90088, -0.707131207, 0, 0.707082391, 0, 1.00000012, 0, -0.707082391, 0, -0.707131207)
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer(ohCFrame1)
+
+end
+    end})
+
+Tab:AddDropdown({
+    Name = "FlameLand Teleports",
+    Default = "FlameLand Island",
+    Options = {"FlameLand Island", "Molten Island","Blue Magma Island","Purple Magma Island","Yellow Magma Island","Red Magma Island","Fantasy World",},
+    Callback = function(Value)
+        getgenv().teleportPlace = Value
+    end    
+})
+
+Tab:AddButton({
+    Name = "",
+    Callback = function()
+        if getgenv().teleportPlace == "Fantasy World" then
+    local ohCFrame1 = CFrame.new(1415.12451, 169.644089, -5604.4707, 0, 0, 1, 0, 1, 0, -1, 0, 0)
+     game:GetService("ReplicatedStorage").Events.Teleport:FireServer(ohCFrame1)
+    elseif getgenv().teleportPlace == "Mystic Mire" then
+        local ohCFrame1 = CFrame.new(1315.54846, 2042.72107, -5586.78125, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        game:GetService("ReplicatedStorage").Events.Teleport:FireServer(ohCFrame1)
+    elseif getgenv().teleportPlace == "Castle Island" then
+        local ohCFrame1 = CFrame.new(1347.01697, 5137.25488, -5601.7417, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        game:GetService("ReplicatedStorage").Events.Teleport:FireServer(ohCFrame1)
+    elseif getgenv().teleportPlace == "Candy Island" then
+        local ohCFrame1 = CFrame.new(1322.64453, 8659.05566, -5596.52344, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        game:GetService("ReplicatedStorage").Events.Teleport:FireServer(ohCFrame1)
+    elseif getgenv().teleportPlace == "Festival Island" then
+        local ohCFrame1 = CFrame.new(1358.43311, 12286.8545, -5561.14893, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        game:GetService("ReplicatedStorage").Events.Teleport:FireServer(ohCFrame1)
+
+
+
+        end
+    end})
+
+
+
+    Tab:AddDropdown({
+        Name = "Fantasy World Teleports",
+        Default = "Fantasy World",
+        Options = {"Fantasy World", "Mystic Mire","Castle Island","Candy Island","Festival Island",},
+        Callback = function(Value)
+            getgenv().teleportPlace = Value
+        end    
+    })
+
+    Tab:AddToggle({
+        Name = "Unlock All Islands",
+        Default = false,
+        Callback = function(Value)
+            getgenv().unlockAll = Value
+                unlockAll()
+        end    
+    })
+    
+ 
+
+
+
+local Tab = Window:MakeTab({
+    Name = "Upgrades",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+
+Tab:AddToggle({
+	Name = "Buy Rebirth Buttons",
+	Default = false,
+	Callback = function(Value)
+		getgenv().rebirthUpgrade = Value
+        rebirthUpgrade()
+	end    
+})
+
+
+
+Tab:AddToggle({
+	Name = "Buy More Jumps",
+	Default = false,
+	Callback = function(Value)
+		getgenv().moreJumps = Value
+            moreJumps()
+	end    
+})
+
+
+
+
+
+OrionLib:Init()
+
+
