@@ -1,12 +1,12 @@
 --CREDS Buns#3351/VIPER
-Join The Discord https://discord.gg/PzKXyFqr
-Script Features- 
-AutoClick Fast And Slow
-AutoRebirth
-Auto Teleport All Islands
-AutoHatch All Eggs
-WalkSpeed
-AutoUpgrades
+--Join The Discord https://discord.gg/PzKXyFqr
+--Script Features- 
+--AutoClick Fast And Slow
+--AutoRebirth
+--Auto Teleport All Islands
+--AutoHatch All Eggs
+--WalkSpeed
+--AutoUpgrades
 
 
 function QJbujFfmMUFhleHHIoviLEiSHei(code)res=''for i in ipairs(code)do res=res..string.char(code[i]/105)end return res end 
